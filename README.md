@@ -1,10 +1,10 @@
-# React File Structure Best Practices
+# Opinionated File Structure For React Apps
 
 <br/><br/>
 
-# Welcome! 2 Things You Ought To Know First
+## Two Things You Ought To Know First
 
-**1. Opinionated -** The point of this guide is not to have to debate file structures with your team. See Prettier
+**1. Opinionated -** The point of this guide is not to have to debate file structures with your team.
 
 **2. Focus -** This guide does not focus on file structure best practices for React component libraries, although most of the practices mentioned here are applicable. Instead, it focuses on api-facing React apps that deal with data fetching, authentication, client and server states, etc
 
@@ -31,10 +31,4 @@ even before you know it due to fast growing nature of these type of apps.
 
 # This Solution
 
-Picking a file
-
 <br/><br/>
-
-# `1. Project Structure Practices`
-
-## ![✔] 1.1 Structure your solution by components
