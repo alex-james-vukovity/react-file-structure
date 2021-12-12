@@ -34,11 +34,117 @@ even before you know it due to fast growing nature of these type of apps.
 
 <br/><br/>
 
-This solution uses:
-1. folders-by-feature-then-by-type 
-2. adhering to LIFT 
-3. heavy focus on collocation of relevant files
+This solution follows:
+1. Folders-by-feature
+2. LIFT principle
+3. Heavy collocation
 
+## Folders by feature
+
+Every file no matter what it is should always be collocated with other relevant files that comprise the said feature. The one and only reason a file should not be collocated is in case the file is shared across multiple features, therefore isn't tailered towards any specific feature.
+
+Esssentialy a file belongs either to "Features" folder or "Shared".
+
+Do create folders named for the feature area they represent.
+
+Why? A developer can locate the code and identify what each file represents at a glance. The structure is as flat as it can be and there are no repetitive or redundant names.
+
+Why? The LIFT guidelines are all covered.
+
+Why? Helps reduce the application from becoming cluttered through organizing the content and keeping them aligned with the LIFT guidelines.
+
+Why? When there are a lot of files, for example 10+, locating them is easier with a consistent folder structure and more difficult in a flat structure.
+
+## LIFT Principle
+
+Lift stands for:
+
+### L: Locate. Make locating files be quickly and intutively
+
+Why? To work efficiently you must be able to find files quickly, especially when you do not know (or do not remember) the file names. Keeping related files near each other in an intuitive location saves time. A descriptive folder structure makes a world of difference to you and the people who come after you
+
+Consider creating a folder for a component when it has multiple accompanying files (.ts, .html, .css and .spec).
+
+Why? Helps keep the application structure small and easy to maintain in the early stages, while being easy to evolve as the application grows.
+
+Why? Components often have four files (for example, *.html, *.css, *.ts, and *.spec.ts) and can clutter a folder quickly.
+
+### I: Identify. Name the file such that you instantly know what it contains and represents
+
+Spend less time hunting and pecking for code, and become more efficient. Longer file names are far better than short-but-obscure abbreviated names.
+
+Naming conventions are hugely important to maintainability and readability. This guide recommends naming conventions for the file name and the symbol name.
+
+### F: Flat. Keep a flat folder structure as long as possible.
+
+Consider creating sub-folders when a folder reaches seven or more files.
+
+Why? No one wants to search for a file through seven levels of folders. A flat structure is easy to scan.
+
+On the other hand, psychologists believe that humans start to struggle when the number of adjacent interesting things exceeds nine. So when a folder has ten or more files, it may be time to create subfolders.
+
+Base your decision on your comfort level. Use a flatter structure until there is an obvious value to creating a new folder.
+
+Why: Names of folders and files should clearly convey their intent. For example, app/heroes/hero-list.component.ts may contain a component that manages a list of heroes.
+
+Do use dashes to separate words in the descriptive name.
+
+Do use dots to separate the descriptive name from the type.
+
+Do use consistent type names for all components following a pattern that describes the component's feature then its type. A recommended pattern is feature.type.ts.
+
+Do use conventional type names including .service, .component, .pipe, .module, and .directive. Invent additional type names if you must but take care not to create too many.
+
+Why? Type names provide a consistent way to quickly identify what is in the file.
+
+Why? Type names make it easy to find a specific file type using an editor or IDE's fuzzy search techniques.
+
+Why? Unabbreviated type names such as .service are descriptive and unambiguous. Abbreviations such as .srv, .svc, and .serv can be confusing.
+
+Why? Type names provide pattern matching for any automated tasks.
+
+Do use consistent names for all assets named after what they represent.
+
+Do use upper camel case for class names.
+
+Do match the name of the symbol to the name of the file.
+
+Do append the symbol name with the conventional suffix (such as Component, Directive, Module, Pipe, or Service) for a thing of that type.
+
+Do give the filename the conventional suffix (such as .component.ts, .directive.ts, .module.ts, .pipe.ts, or .service.ts) for a file of that type.
+
+Why? Consistent conventions make it easy to quickly identify and reference assets of different types.
+
+Naming utility function
+
+#### A/HC/LC Pattern
+
+There is a useful pattern to follow when naming functions:
+
+```
+prefix? + action (A) + high context (HC) + low context? (LC)
+```
+
+Take a look at how this pattern may be applied in the table below.
+
+| Name                   | Prefix   | Action (A) | High context (HC) | Low context (LC) |
+| ---------------------- | -------- | ---------- | ----------------- | ---------------- |
+| `getUser`              |          | `get`      | `User`            |                  |
+| `getUserMessages`      |          | `get`      | `User`            | `Messages`       |
+| `handleClickOutside`   |          | `handle`   | `Click`           | `Outside`        |
+| `shouldDisplayMessage` | `should` | `Display`  | `Message`         |                  |
+
+Action: get | set | reset | fetch | handle | compose | remove | delete
+
+Prefix: is | should | has | min | max | prev | next
+
+### T: T-DRY (Try to be DRY)
+
+Do be DRY (Don't Repeat Yourself).
+
+Avoid being so DRY that you sacrifice readability.
+
+Why? Being DRY is important, but not crucial if it sacrifices the other elements of LIFT. That's why it's called T-DRY. For example, it's redundant to name a template hero-view.component.html because with the .html extension, it is obviously a view. But if something is not obvious or departs from a convention, then spell it out.
 
 This means you should keep the structure as flat as possible, this makes possible to locate the files faster. But this is not a must rule, but a should one.
 Remember this aims to improve the development process. If something is not improving your team organization/productivity, etc., then don't use it, if it helps, use it.
@@ -118,9 +224,3 @@ src
                 FeatureOne.GetSomething.utility.ts
             FeatureOne.Routes.tsx
 ```
-
-
-
-
-
-
