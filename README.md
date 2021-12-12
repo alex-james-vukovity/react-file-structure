@@ -20,12 +20,12 @@ What I mean by "feels right" is that there is no right file strucutre. Every tea
 
 # The Problem
 
-**1. File structure -** you want to know what your file structure will look like right from the get-go. You want a time-proof file structure that will scale well without having to refactor eventually. You googled it up and read dozens of articles. You found most of them vague without explaining too much if at all, what the exact benefits of a specific file structures are.
+**1. File structure -** you want to know what your file structure will look like right out the gate. You want a time-proof file structure that will scale well without having to refactor eventually as the app grows. You googled it up and read dozens of articles. You found most of them vague without explaining too much if at all, what the exact benefits each file structure has and what are the trade-offs if any.
 
-**2. Refactors due to app growth -** you want to avoid any potential refactors due to application growth over time. More often than not, api facing React apps are heavily form oriented. Such apps can grow very fast and very wide. Not thinking too much about file structure from the get-go can lead to refactors
+**2. Refactors due to app growth -** you want to avoid any potential refactors due to application growth over time. More often than not, API-facing React apps are heavily form oriented. Such apps can grow very fast and very wide. Not thinking too much about file structure from the get-go can lead to refactors
 even before you know it due to fast growing nature of these type of apps.
 
-**3. Naming -** you want to know what naming convetions files and folders will have from day one. At the start, names can be very generic without any repercussions however as the app grows, names have to be more and more specific with more context included in the names per sei. In order to avoid having to rename, it's a good idea to adopt a convetion that will still have legs even two years from the boostrapping.
+**3. Naming -** you want to know what naming convetions files and folders will have from day one. At the start, names can be very generic without any repercussions however as the app grows, sometimes names have to be more specific with more context included in the names per sei. In order to avoid having to rename, it's a good idea to adopt a convetion that will still have legs even two years from the bootstrapping.
 
 <br/><br/>
 
