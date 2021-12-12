@@ -11,10 +11,10 @@
 <br/><br/>
 
 # Motivation
+Knowing what exact file structure and naming convention to adopt right out the the gate can save you and your team a lot of time and effort. Not knowing this could have you wade through many different refactors until you get to the structure that feels right for you and your team.
 
-Looking two years back, I wish I'd known what exact file structure I should've gone with when I was just staring to build out a freshly POCed React app. It would've saved me so much time and effort. Instead, I had to wade through many file structure and naming refactors to get to the point the file structure of the same app is today.
-
-[React official docs](https://reactjs.org/docs/faq-structure.html) tells you not to think about file structure too much and to figure it out as the app grows. In my experience, unfortunately this approach did not work out well and for that reason I'd like to share the knowledge I gained during this time.
+What I mean by "feels right" is that there is no right file strucutre. Every team and every project is in a certain way different. That means that each team should pick a file structure that works for them.
+[React official docs](https://reactjs.org/docs/faq-structure.html) tells you not to think about file structure too much and to figure it out as the app grows. In my experience, unfortunately this approach did not work out well and for that reason I'd like to share the knowledge I gained during this time. 
 
 <br/><br/>
 
