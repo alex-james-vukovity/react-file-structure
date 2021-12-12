@@ -4,9 +4,9 @@
 
 ## Two Things You Ought To Know First
 
-**1. Opinionated -** The point of this guide is not to have to debate file structures with your team.
+**1. Opinionated -** The point of this guide is not to have to debate file structures with your team. Since there is no "right" file structure like there is no "right" code formatting style, there is always going to be debates what file structure works best. For that reason the goal of this guide is to eliminate any potential debates when it comes to file structures. Similarly how Prettier with its default configuration is meant to elimiinate any potential code formatting style debates.
 
-**2. Focus -** This guide does not focus on file structure best practices for React component libraries, although most of the practices mentioned here are applicable. Instead, it focuses on api-facing React apps that deal with data fetching, authentication, client and server states, etc
+**2. Focus -** This guide does not focus on file structure of React component libraries, although most of the practices mentioned here are applicable. Instead, it focuses on API-facing CRUD (Create, Read, Update, Delete) React apps that deal with data fetching, authentication, client and server states, etc.
 
 <br/><br/>
 
