@@ -133,7 +133,7 @@ Do be DRY (Don't Repeat Yourself).
 
 Avoid being so DRY that you sacrifice readability.
 
-Why? Being DRY is important, but not crucial if it sacrifices the other elements of LIFT. That's why it's called T-DRY. For example, it's redundant to name a template hero-view.component.html because with the .html extension, it is obviously a view. But if something is not obvious or departs from a convention, then spell it out.
+Why? Being DRY is important, but not crucial if it sacrifices the other elements of LIFT. That's why it's called T-DRY
 
 <br/><br/>
 
