@@ -41,13 +41,12 @@ This solution follows:
 
 ## Folders by feature
 
-Every file no matter what it is should always be collocated with other relevant files that comprise the said feature. The one and only reason a file should not be collocated is in case the file is shared across multiple features, therefore isn't tailered towards any specific feature.
+Every file regardless of type and use intent should always be collocated with other relevant files that comprise the a certain feature. 
+The one and only reason a file should not be collocated is in case the file is shared across multiple features, therefore isn't tailered towards any specific feature.
 
 Esssentialy a file belongs either to "Features" folder or "Shared".
 
-Do create folders named for the feature area they represent.
-
-Why? A developer can locate the code and identify what each file represents at a glance. The structure is as flat as it can be and there are no repetitive or redundant names.
+Why? A developer can locate the code and identify what each file represents at a glance.
 
 Why? The LIFT guidelines are all covered.
 
@@ -59,15 +58,15 @@ Why? When there are a lot of files, for example 10+, locating them is easier wit
 
 Lift stands for:
 
-### L: Locate. Make locating files be quickly and intutively
+### L: Locate. 
+
+Make locating files quick and intutive. Consider creating a folder for a component when it has multiple accompanying files (interface, test, validation, mock, utilities etc).
 
 Why? To work efficiently you must be able to find files quickly, especially when you do not know (or do not remember) the file names. Keeping related files near each other in an intuitive location saves time. A descriptive folder structure makes a world of difference to you and the people who come after you
 
-Consider creating a folder for a component when it has multiple accompanying files (.ts, .html, .css and .spec).
-
 Why? Helps keep the application structure small and easy to maintain in the early stages, while being easy to evolve as the application grows.
 
-Why? Components often have four files (for example, *.html, *.css, *.ts, and *.spec.ts) and can clutter a folder quickly.
+Why? Contianer components often have many companion files and can clutter a folder quickly.
 
 ### I: Identify. Name the file such that you instantly know what it contains and represents
 
@@ -79,21 +78,19 @@ Naming conventions are hugely important to maintainability and readability. This
 
 Consider creating sub-folders when a folder reaches seven or more files.
 
-Why? No one wants to search for a file through seven levels of folders. A flat structure is easy to scan.
+Why? A flat folder structure is easier to scan.
 
-On the other hand, psychologists believe that humans start to struggle when the number of adjacent interesting things exceeds nine. So when a folder has ten or more files, it may be time to create subfolders.
+On the other hand, psychologists believe that humans start to struggle when the number of adjacent interesting things exceeds nine. So when a folder has ten or more files, it may be time to create subfolders. (I don't know if this is true btw but a number has to be picked so might as well be nine)
 
-Base your decision on your comfort level. Use a flatter structure until there is an obvious value to creating a new folder.
+Use dashes to separate words in the descriptive name.
 
-Why: Names of folders and files should clearly convey their intent. For example, app/heroes/hero-list.component.ts may contain a component that manages a list of heroes.
+Use dots to separate the descriptive name from the type.
 
-Do use dashes to separate words in the descriptive name.
+Use consistent type names for all components following a pattern that describes the component's feature then its type. A recommended pattern is feature.type.ts.
 
-Do use dots to separate the descriptive name from the type.
+Use conventional type names including .service, .component, .pipe, .module, and .directive. Invent additional type names if you must but take care not to create too many.
 
-Do use consistent type names for all components following a pattern that describes the component's feature then its type. A recommended pattern is feature.type.ts.
-
-Do use conventional type names including .service, .component, .pipe, .module, and .directive. Invent additional type names if you must but take care not to create too many.
+Why: Names of folders and files should clearly convey their intent.
 
 Why? Type names provide a consistent way to quickly identify what is in the file.
 
