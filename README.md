@@ -106,9 +106,9 @@ Why? Consistent conventions make it easy to quickly identify and reference asset
 
 Naming utility function
 
-#### A/HC/LC Pattern
+#### Naming utility function. A/HC/LC Pattern
 
-There is a useful pattern to follow when naming functions:
+Use this pattern when naming functions:
 
 ```
 prefix? + action (A) + high context (HC) + low context? (LC)
