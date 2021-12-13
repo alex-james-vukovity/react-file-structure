@@ -189,7 +189,7 @@ src
                 FeatureOne.Create.test.tsx
                 FeatureOne.Create.interface.ts
                 FeatureOne.Create.validation.ts
-                FeatureOne.Create.DedicatedFormPartial.form.tsx
+                FeatureOne.Create.form.tsx
                 FeatureOne.Create.mock.ts
             List
                 FeatureOne.List.tsx
@@ -217,7 +217,7 @@ src
                 Create.test.tsx
                 Create.interface.ts
                 Create.validation.ts
-                DedicatedFormPartial.form.tsx
+                Create.form.tsx
                 Create.mock.ts
             List
                 List.tsx
@@ -229,6 +229,7 @@ src
                 Update.test.tsx
                 Update.interface.ts
                 Update.validation.ts
+                Update.form.tsx
                 DedicatedFormPartial.form.tsx
                 Update.mock.ts
             Shared
