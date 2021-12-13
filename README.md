@@ -167,9 +167,9 @@ src
                 ContentLoader.tsx
                 Title.tsx
                 SectionTitle.tsx
-        Context
-            GlobalState.tsx
-            Authentication.tsx
+        Contexts
+            GlobalState.Context.tsx
+            Authentication.Context.tsx
         Hooks
             useSomething.ts
             useFetch.ts
@@ -184,26 +184,54 @@ src
                 FeatureOne.Create.test.tsx
                 FeatureOne.Create.interface.ts
                 FeatureOne.Create.validation.ts
-                FeatureOne.Create.DedicatedFormPartial.fields.tsx
-                FeatureOne.Create.mocks.ts
+                FeatureOne.Create.DedicatedFormPartial.form.tsx
+                FeatureOne.Create.mock.ts
             List
                 FeatureOne.List.tsx
                 FeatureOne.List.test.tsx
                 FeatureOne.List.interfaces.ts
-                FeatureOne.List.mocks.ts
+                FeatureOne.List.mock.ts
             Update
                 FeatureOne.Update.tsx
                 FeatureOne.Update.test.tsx
                 FeatureOne.Update.interface.ts
                 FeatureOne.Update.validation.ts
-                FeatureOne.Update.DedicatedFormPartial.fields.tsx
-                FeatureOne.Update.mocks.ts
+                FeatureOne.Update.DedicatedFormPartial.form.tsx
+                FeatureOne.Update.mock.ts
             Shared
                 FeatureOne.interface.ts
                 FeatureOne.validation.tsx
-                FeatureOne.SomeFormPartialOne.fields.tsx
-                FeatureOne.SomeFormPartialTwo.fields.tsx
-                FeatureOne.SomeFormPartialThree.fields.tsx
-                FeatureOne.Assertions.utility.ts
+                FeatureOne.SomeFormPartialOne.form.tsx
+                FeatureOne.SomeFormPartialTwo.form.tsx
+                FeatureOne.SomeFormPartialThree.form.tsx
+                isSameData.utility.ts
             FeatureOne.Routes.tsx
+        FeatureTwo
+            Create
+                Create.tsx
+                Create.test.tsx
+                Create.interface.ts
+                Create.validation.ts
+                DedicatedFormPartial.form.tsx
+                Create.mock.ts
+            List
+                List.tsx
+                List.test.tsx
+                List.interfaces.ts
+                List.mock.ts
+            Update
+                Update.tsx
+                Update.test.tsx
+                Update.interface.ts
+                Update.validation.ts
+                DedicatedFormPartial.form.tsx
+                Update.mock.ts
+            Shared
+                FeatureTwo.interface.ts
+                FeatureTwo.validation.tsx
+                SomeFormPartialOne.form.tsx
+                SomeFormPartialTwo.form.tsx
+                SomeFormPartialThree.form.tsx
+                isSameData.utility.ts
+            Routes.tsx
 ```
