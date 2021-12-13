@@ -76,19 +76,19 @@ Naming conventions are hugely important to maintainability and readability. This
 
 ### F: Flat. Keep a flat folder structure as long as possible.
 
-Consider creating sub-folders when a folder reaches seven or more files.
+Consider creating sub-folders when a folder reaches nine or more files.
 
-Why? A flat folder structure is easier to scan.
-
-On the other hand, psychologists believe that humans start to struggle when the number of adjacent interesting things exceeds nine. So when a folder has ten or more files, it may be time to create subfolders. (I don't know if this is true btw but a number has to be picked so might as well be nine)
-
-Use dashes to separate words in the descriptive name.
+Psychologists believe that humans start to struggle when the number of adjacent interesting things exceeds nine. So when a folder has nine or more files, it may be time to create subfolders. (I don't know if this is true btw about humans but a number has to be picked so might as well be nine)
 
 Use dots to separate the descriptive name from the type.
 
-Use consistent type names for all components following a pattern that describes the component's feature then its type. A recommended pattern is feature.type.ts.
+Use consistent type names for all components following a pattern that describes the component's feature then its type. A recommended pattern is FeatureOne.type.ts.
 
-Use conventional type names including .service, .component, .pipe, .module, and .directive. Invent additional type names if you must but take care not to create too many.
+Use consistent names for all assets named after what they represent.
+
+Use upper camel case for file names.
+
+Use conventional type suffix names including .interface, .component, .mock, .test, .module, .validation, .utility. Invent additional type names if you must but take care not to create too many.
 
 Why: Names of folders and files should clearly convey their intent.
 
@@ -96,19 +96,9 @@ Why? Type names provide a consistent way to quickly identify what is in the file
 
 Why? Type names make it easy to find a specific file type using an editor or IDE's fuzzy search techniques.
 
-Why? Unabbreviated type names such as .service are descriptive and unambiguous. Abbreviations such as .srv, .svc, and .serv can be confusing.
+Why? Unabbreviated type names such as .interface are descriptive and unambiguous.
 
 Why? Type names provide pattern matching for any automated tasks.
-
-Do use consistent names for all assets named after what they represent.
-
-Do use upper camel case for class names.
-
-Do match the name of the symbol to the name of the file.
-
-Do append the symbol name with the conventional suffix (such as Component, Directive, Module, Pipe, or Service) for a thing of that type.
-
-Do give the filename the conventional suffix (such as .component.ts, .directive.ts, .module.ts, .pipe.ts, or .service.ts) for a file of that type.
 
 Why? Consistent conventions make it easy to quickly identify and reference assets of different types.
 
@@ -143,10 +133,9 @@ Avoid being so DRY that you sacrifice readability.
 
 Why? Being DRY is important, but not crucial if it sacrifices the other elements of LIFT. That's why it's called T-DRY. For example, it's redundant to name a template hero-view.component.html because with the .html extension, it is obviously a view. But if something is not obvious or departs from a convention, then spell it out.
 
-This means you should keep the structure as flat as possible, this makes possible to locate the files faster. But this is not a must rule, but a should one.
+This means you should keep the structure as flat as possible, this makes possible to locate the files faster. But this is not a must rule, but a should.
 Remember this aims to improve the development process. If something is not improving your team organization/productivity, etc., then don't use it, if it helps, use it.
 
-Let me talk about what each of these means.
 
 ```
 src
@@ -218,6 +207,5 @@ src
                 FeatureOne.SomeFormPartialTwo.fields.tsx
                 FeatureOne.SomeFormPartialThree.fields.tsx
                 FeatureOne.Assertions.utility.ts
-                FeatureOne.GetSomething.utility.ts
             FeatureOne.Routes.tsx
 ```
