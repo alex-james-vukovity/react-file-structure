@@ -35,7 +35,7 @@ even before you know it due to fast growing nature of these type of apps.
 This solution follows:
 1. Folders-by-feature
 2. LIFT principle
-3. Heavy collocation
+3. Accent on collocation
 
 ## Folders by feature
 
