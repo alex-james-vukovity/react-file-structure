@@ -106,9 +106,9 @@ Why? Consistent conventions make it easy to quickly identify and reference asset
 
 Naming utility function
 
-#### Naming utility function. A/HC/LC Pattern
+#### Naming utility functions. A/HC/LC Pattern
 
-Use this pattern when naming functions:
+Use this pattern when naming functions that don't return jsx:
 
 ```
 prefix? + action (A) + high context (HC) + low context? (LC)
