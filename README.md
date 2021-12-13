@@ -37,6 +37,8 @@ This solution follows:
 2. LIFT principle
 3. Accent on collocation
 
+<br/><br/>
+
 ## Folders by feature
 
 Every file regardless of type and use intent should always be collocated with other relevant files that comprise the a certain feature. 
@@ -52,13 +54,15 @@ Why? Helps reduce the application from becoming cluttered through organizing the
 
 Why? When there are a lot of files, for example 10+, locating them is easier with a consistent folder structure and more difficult in a flat structure.
 
+<br/><br/>
+
 ## LIFT Principle
 
 Lift stands for:
 
-### L: Locate. 
+### L: Locate. Make locating files quick and intutive.
 
-Make locating files quick and intutive. Consider creating a folder for a component when it has multiple accompanying files (interface, test, validation, mock, utilities etc).
+Consider creating a folder for a component when it has multiple accompanying files (interface, test, validation, mock, utilities etc).
 
 Why? To work efficiently you must be able to find files quickly, especially when you do not know (or do not remember) the file names. Keeping related files near each other in an intuitive location saves time. A descriptive folder structure makes a world of difference to you and the people who come after you
 
@@ -131,8 +135,9 @@ Avoid being so DRY that you sacrifice readability.
 
 Why? Being DRY is important, but not crucial if it sacrifices the other elements of LIFT. That's why it's called T-DRY. For example, it's redundant to name a template hero-view.component.html because with the .html extension, it is obviously a view. But if something is not obvious or departs from a convention, then spell it out.
 
-This means you should keep the structure as flat as possible, this makes possible to locate the files faster. But this is not a must rule, but a should.
-Remember this aims to improve the development process. If something is not improving your team organization/productivity, etc., then don't use it, if it helps, use it.
+<br/><br/>
+
+# Example
 
 
 ```
