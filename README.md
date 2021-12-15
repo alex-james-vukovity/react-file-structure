@@ -62,7 +62,7 @@ Lift stands for:
 
 ### L: Locate. Make locating files quick and intuitive.
 
-Consider creating a folder for a component when it has multiple accompanying files (types, interfaces, tests, validations, mocks, utilities etc).
+Consider creating a folder for a component when it has multiple accompanying files (types, interfaces, tests, validations, mocks, utils etc).
 
 Why? To work efficiently you must be able to find files quickly, especially when you do not know (or do not remember) the file names. Keeping related files near each other in an intuitive location saves time. A descriptive folder structure makes a world of difference to you and the people who come after you
 
@@ -90,7 +90,7 @@ Use consistent names for all assets named after what they represent.
 
 Use upper camel case for file names.
 
-Use conventional type suffix names including `.type`, `.test`, `.validation`, `.utility` etc. Invent additional type names if you must but take care not to create too many.
+Use conventional type suffix names including `.type`, `.test`, `.validation`, `.utils` etc. Invent additional type names if you must but take care not to create too many.
 
 Why? Names of folders and files should clearly convey their intent.
 
@@ -146,8 +146,8 @@ src
         Types
             ReusableItem.type.ts
         Utilities
-            Assertions.utility.ts
-            Getters.utility.ts
+            Assertions.utils.ts
+            Getters.utils.ts
     Features
         FeatureTwo
             Create
@@ -156,7 +156,7 @@ src
                 Create.types.ts
                 Create.validations.ts
                 Create.fields.tsx
-                Create.utilities.ts
+                Create.utils.ts
             List
                 List.container.tsx
                 List.container.test.tsx
@@ -167,12 +167,12 @@ src
                 Update.types.ts
                 Update.validations.ts
                 Update.fields.tsx
-                Update.utilities.ts
+                Update.utils.ts
             Shared
                 Shared.types.ts
                 Shared.validations.tsx
                 Address.fields.tsx
                 Bank.fields.tsx
-                Shared.utilities.ts
+                Shared.utils.ts
             FeatureTwo.routes.tsx
 ```
