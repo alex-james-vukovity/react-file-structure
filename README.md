@@ -80,7 +80,7 @@ Naming conventions are hugely important to maintainability and readability. This
 
 Consider creating sub-folders when a folder reaches nine or more files.
 
-Psychologists believe that humans start to struggle when the number of adjacent interesting things exceeds nine. So when a folder has nine or more files, it may be time to create subfolders. (I don't know if this is true btw about humans but a number has to be picked so might as well be nine)
+Psychologists believe that humans start to struggle when the number of adjacent interesting things exceeds nine. So when a folder has nine or more files, it may be time to create subfolders. (I don't know if this is true about humans but a number has to be picked so might as well be nine)
 
 Use dots to separate the descriptive name from the type.
 
