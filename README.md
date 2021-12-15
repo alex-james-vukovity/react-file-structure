@@ -44,9 +44,9 @@ This solution follows:
 Every file regardless of type and use intent should always be collocated with other relevant files that compose a certain feature. 
 The one and only reason a file should not be collocated is in case the file is shared across multiple features, therefore isn't tailored towards any specific feature.
 
-Essentially a file belongs either to "Features" folder or "Shared".
+Essentially a file belongs either to "Features" folder or "Shared" folder.
 
-Why? A developer can locate the code and identify what each file represents at a glance.
+Why? A developer can locate all relevent code of a certain feature and identify what each file represents at a glance.
 
 Why? The LIFT guidelines are all covered.
 
