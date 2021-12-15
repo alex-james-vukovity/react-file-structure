@@ -62,7 +62,7 @@ Lift stands for:
 
 ### L: Locate. Make locating files quick and intuitive.
 
-Consider creating a folder for a component when it has multiple accompanying files (interface, test, validation, mock, utilities etc).
+Consider creating a folder for a component when it has multiple accompanying files (types, interfaces, tests, validations, mocks, utilities etc).
 
 Why? To work efficiently you must be able to find files quickly, especially when you do not know (or do not remember) the file names. Keeping related files near each other in an intuitive location saves time. A descriptive folder structure makes a world of difference to you and the people who come after you
 
@@ -84,21 +84,21 @@ Psychologists believe that humans start to struggle when the number of adjacent 
 
 Use dots to separate the descriptive name from the type.
 
-Use consistent type names for all components following a pattern that describes the component's feature then its type. A recommended pattern is FeatureOne.type.ts.
+Use consistent type names for all components following a pattern that describes the component's feature then its type. A recommended pattern is `Update.type.ts`
 
 Use consistent names for all assets named after what they represent.
 
 Use upper camel case for file names.
 
-Use conventional type suffix names including .interface, .component, .mock, .test, .module, .validation, .utility. Invent additional type names if you must but take care not to create too many.
+Use conventional type suffix names including `.type`, `.test`, `.validation`, `.utility` etc. Invent additional type names if you must but take care not to create too many.
 
-Why?: Names of folders and files should clearly convey their intent.
+Why? Names of folders and files should clearly convey their intent.
 
 Why? Type names provide a consistent way to quickly identify what is in the file.
 
 Why? Type names make it easy to find a specific file type using an editor or IDE's fuzzy search techniques.
 
-Why? Unabbreviated type names such as .interface are descriptive and unambiguous.
+Why? Unabbreviated type names such as `.test` are descriptive and unambiguous.
 
 Why? Type names provide pattern matching for any automated tasks.
 
