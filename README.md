@@ -52,7 +52,7 @@ Why? The LIFT guidelines are all covered.
 
 Why? Helps reduce the application from becoming cluttered through organizing the content and keeping them aligned with the LIFT guidelines.
 
-Why? When there are a lot of files, for example 10+, locating them is easier with a consistent folder structure and more difficult in a flat structure.
+Why? When there are a lot of files per feature, for example 10+, locating them is easier with a consistent folder-by-feature structure.
 
 <br/><br/>
 
