@@ -4,7 +4,7 @@
 
 ## Two Things You Ought To Know First
 
-**1. Opinionated -** Since there is no "right" file structure, there is always going to be debates what file structure works best. That said, if you're ooking for an opinionated guide to React conventions, and application structure, step right in. This style guide presents preferred conventions and, as importantly, explains why. For that reason the goal of this guide is to eliminate any potential debates when it comes to file structures. Remember there is no magic bullet for this or a general recipe which fits for all projects.
+**1. Opinionated -** Since there is no "right" file structure, there is always going to be debates what file structure works best. That said, if you're looking for an opinionated guide to React conventions, and application structure, step right in. This style guide presents preferred conventions and, as importantly, explains why. For that reason the goal of this guide is to eliminate any potential debates when it comes to file structures. Remember there is no magic bullet for this or a general recipe which fits for all projects.
 
 **2. Focus -** This guide does not focus on file structure of React component libraries, although most of the practices mentioned here are applicable. Instead, it focuses on API-facing medium to large CRUD (Create, Read, Update, Delete) React apps that deal with data fetching, authentication, client and server states, etc.
 The goal of this article is to help developers by proposing a scalable and maintainable structure.
@@ -14,7 +14,7 @@ The goal of this article is to help developers by proposing a scalable and maint
 # Motivation
 Knowing what exact file structure and naming convention to adopt right out the the gate can save you and your team a lot of time and effort. Not knowing this could have you wade through many different refactors until you get to the structure that feels right for you and your team.
 
-What I mean by "feels right" is that there is no right file strucutre. Every team and every project is in a certain way different. That means that each team should pick a file structure that works for them.
+What I mean by "feels right" is that there is no right file structure. Every team and every project is in a certain way different. That means that each team should pick a file structure that works for them.
 [React official docs](https://reactjs.org/docs/faq-structure.html) tells you not to think about file structure too much and to figure it out as the app grows. In my experience, unfortunately this approach did not work out well and for that reason I'd like to share the knowledge I gained during this time. 
 
 <br/><br/>
@@ -26,7 +26,7 @@ What I mean by "feels right" is that there is no right file strucutre. Every tea
 **2. Refactors due to app growth -** you want to avoid any potential refactors due to application growth over time. More often than not, API-facing React apps are heavily form oriented. Such apps can grow very fast and very wide. Not thinking too much about file structure from the get-go can lead to refactors
 even before you know it due to fast growing nature of these type of apps.
 
-**3. Naming -** you want to know what naming convetions files and folders will have from day one. At the start, names can be very generic without any repercussions however as the app grows, sometimes names have to be more specific with more context included in the names per sei. In order to avoid having to rename, it's a good idea to adopt a convetion that will still have legs even two years from the bootstrapping.
+**3. Naming -** you want to know what naming conventions files and folders will have from day one. At the start, names can be very generic without any repercussions however as the app grows, sometimes names have to be more specific with more context included in the names per sei. In order to avoid having to rename, it's a good idea to adopt a convention that will still have legs even two years from the bootstrapping.
 
 <br/><br/>
 
@@ -41,10 +41,10 @@ This solution follows:
 
 ## Folders by feature
 
-Every file regardless of type and use intent should always be collocated with other relevant files that comprise the a certain feature. 
-The one and only reason a file should not be collocated is in case the file is shared across multiple features, therefore isn't tailered towards any specific feature.
+Every file regardless of type and use intent should always be collocated with other relevant files that compose a certain feature. 
+The one and only reason a file should not be collocated is in case the file is shared across multiple features, therefore isn't tailored towards any specific feature.
 
-Esssentialy a file belongs either to "Features" folder or "Shared".
+Essentially a file belongs either to "Features" folder or "Shared".
 
 Why? A developer can locate the code and identify what each file represents at a glance.
 
@@ -60,7 +60,7 @@ Why? When there are a lot of files, for example 10+, locating them is easier wit
 
 Lift stands for:
 
-### L: Locate. Make locating files quick and intutive.
+### L: Locate. Make locating files quick and intuitive.
 
 Consider creating a folder for a component when it has multiple accompanying files (interface, test, validation, mock, utilities etc).
 
@@ -68,13 +68,13 @@ Why? To work efficiently you must be able to find files quickly, especially when
 
 Why? Helps keep the application structure small and easy to maintain in the early stages, while being easy to evolve as the application grows.
 
-Why? Contianer components often have many companion files and can clutter a folder quickly.
+Why? Container components often have many companion files and can clutter a folder quickly.
 
 ### I: Identify. Name the file such that you instantly know what it contains and represents
 
 Spend less time hunting and pecking for code, and become more efficient. Longer file names are far better than short-but-obscure abbreviated names.
 
-Naming conventions are hugely important to maintainability and readability. This guide recommends naming conventions for the file name and the symbol name.
+Naming conventions are hugely important to maintainability and readability. This guide recommends naming conventions for the file name and the type name.
 
 ### F: Flat. Keep a flat folder structure as long as possible.
 
@@ -92,7 +92,7 @@ Use upper camel case for file names.
 
 Use conventional type suffix names including .interface, .component, .mock, .test, .module, .validation, .utility. Invent additional type names if you must but take care not to create too many.
 
-Why: Names of folders and files should clearly convey their intent.
+Why?: Names of folders and files should clearly convey their intent.
 
 Why? Type names provide a consistent way to quickly identify what is in the file.
 
@@ -103,29 +103,6 @@ Why? Unabbreviated type names such as .interface are descriptive and unambiguous
 Why? Type names provide pattern matching for any automated tasks.
 
 Why? Consistent conventions make it easy to quickly identify and reference assets of different types.
-
-Naming utility function
-
-#### Naming utility functions. A/HC/LC Pattern
-
-Use this pattern when naming functions that don't return jsx:
-
-```
-prefix? + action (A) + high context (HC) + low context? (LC)
-```
-
-Take a look at how this pattern may be applied in the table below.
-
-| Name                   | Prefix   | Action (A) | High context (HC) | Low context (LC) |
-| ---------------------- | -------- | ---------- | ----------------- | ---------------- |
-| `getUser`              |          | `get`      | `User`            |                  |
-| `getUserMessages`      |          | `get`      | `User`            | `Messages`       |
-| `handleClickOutside`   |          | `handle`   | `Click`           | `Outside`        |
-| `shouldDisplayMessage` | `should` | `Display`  | `Message`         |                  |
-
-Action: get | set | reset | fetch | handle | compose | remove | delete
-
-Prefix: is | should | has | min | max | prev | next
 
 ### T: T-DRY (Try to be DRY)
 
@@ -151,93 +128,51 @@ src
                 SelectMenu.test.tsx
                 Checkbox.tsx
                 Checkbox.test.tsx
-                FormTitle.tsx
-                FormGrid.tsx
-                FormGrid.Item.tsx
-                FormGrid.Item.OneColumn.tsx
-                FormGrid.Item.TwoColumns.tsx
-                FormGrid.Item.ThreeColumns.tsx
+                FormTitle.tsx  
             Layout
                 ListLayout.tsx
-                ListLayout.Bar.tsx
+                ListLayoutBar.tsx
                 CreateLayout.tsx
-                CreateLayout.SubmitButton.tsx
-                CreateLayout.ResetButton.tsx
-                UpdateLayout.tsx
-                UpdateLayout.CancelButton.tsx
                 Navigation.tsx
-                Navigation.LinkButton.tsx
-                Navigation.List.tsx
-                Navigation.LogoutButton.tsx
-                ContentLoader.tsx
-                Title.tsx
-                SectionTitle.tsx
+                NavigationLinkButton.tsx
+                NavigationList.tsx
+                NavigationLogoutButton.tsx
         Contexts
-            GlobalState.Context.tsx
-            Authentication.Context.tsx
+            GlobalStateProvider.tsx
+            AuthenticationProvider.tsx
         Hooks
             useSomething.ts
             useFetch.ts
-        Interfaces
-            UseParams.interface.ts
+        Types
+            ReusableItem.type.ts
         Utilities
-            JoinPaginationParams.utility.ts
+            Assertions.utility.ts
+            Getters.utility.ts
     Features
-        FeatureOne
-            Create
-                FeatureOne.Create.tsx
-                FeatureOne.Create.test.tsx
-                FeatureOne.Create.interface.ts
-                FeatureOne.Create.validation.ts
-                FeatureOne.Create.form.tsx
-                FeatureOne.Create.mock.ts
-            List
-                FeatureOne.List.tsx
-                FeatureOne.List.test.tsx
-                FeatureOne.List.interfaces.ts
-                FeatureOne.List.mock.ts
-            Update
-                FeatureOne.Update.tsx
-                FeatureOne.Update.test.tsx
-                FeatureOne.Update.interface.ts
-                FeatureOne.Update.validation.ts
-                FeatureOne.Update.DedicatedFormPartial.form.tsx
-                FeatureOne.Update.mock.ts
-            Shared
-                FeatureOne.interface.ts
-                FeatureOne.validation.tsx
-                FeatureOne.SomeFormPartialOne.form.tsx
-                FeatureOne.SomeFormPartialTwo.form.tsx
-                FeatureOne.SomeFormPartialThree.form.tsx
-                isSameData.utility.ts
-            FeatureOne.Routes.tsx
         FeatureTwo
             Create
-                Create.tsx
-                Create.test.tsx
-                Create.interface.ts
-                Create.validation.ts
-                Create.form.tsx
-                Create.mock.ts
+                Create.container.tsx
+                Create.container.test.tsx
+                Create.types.ts
+                Create.validations.ts
+                Create.fields.tsx
+                Create.utilities.ts
             List
-                List.tsx
-                List.test.tsx
-                List.interfaces.ts
-                List.mock.ts
+                List.container.tsx
+                List.container.test.tsx
+                List.types.ts
             Update
-                Update.tsx
-                Update.test.tsx
-                Update.interface.ts
-                Update.validation.ts
-                Update.form.tsx
-                DedicatedFormPartial.form.tsx
-                Update.mock.ts
+                Update.container.tsx
+                Update.container.test.tsx
+                Update.types.ts
+                Update.validations.ts
+                Update.fields.tsx
+                Update.utilities.ts
             Shared
-                FeatureTwo.interface.ts
-                FeatureTwo.validation.tsx
-                SomeFormPartialOne.form.tsx
-                SomeFormPartialTwo.form.tsx
-                SomeFormPartialThree.form.tsx
-                isSameData.utility.ts
-            Routes.tsx
+                Shared.types.ts
+                Shared.validations.tsx
+                Address.fields.tsx
+                Bank.fields.tsx
+                Shared.utilities.ts
+            FeatureTwo.routes.tsx
 ```
